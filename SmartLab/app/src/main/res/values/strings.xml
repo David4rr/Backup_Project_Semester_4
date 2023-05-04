@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Lab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="daftar_barang_fragment">Daftar Barang Fragment</string>
+    <string name="Home_Fragment">Home Fragment</string>
+    <string name="peminjaman_fragment">Peminjaman_Fragment</string>
+</resources>
