@@ -3,6 +3,7 @@ package com.example.smartlab;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -25,9 +26,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bottomNavigationView = findViewById(R.id.bottom_navigator);
+        BottomNavigationView bottomNavigationView=(BottomNavigationView)findViewById(R.id.bottom_navigator);
+        bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
+        // Code Diatas untuk mengatur default bottom navigator nya
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+        // Code diatas untuk memanggil fragmennya
 
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -47,5 +51,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
+        // code diatas untuk berfungsi memindahkan fragment 1 dan fragment lainya
     }
 }
