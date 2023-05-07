@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/background_barang.xml" value="0.2245" />
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/button_editprofile.xml" value="0.2245" />
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/button_notif.xml" value="0.2245" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/button_shape.xml" value="0.2245" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/button_shape_daftar.xml" value="0.2245" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/drawable/daftar_barang.xml" value="0.2245" />
@@ -22,8 +25,10 @@
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/activity_masuk_daftar.xml" value="0.264" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/activity_splash_screen.xml" value="0.152" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/fragment_daftar_barang.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/fragment_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/fragment_edit_profile.xml" value="0.4" />
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/fragment_peminjaman.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/layout/list_history.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/david/Documents/my private document/tugas kuliah/Semester 4/Project Semester 4/SmartLab/app/src/main/res/menu/bottom_navigation.xml" value="0.27447916666666666" />
       </map>
     </option>

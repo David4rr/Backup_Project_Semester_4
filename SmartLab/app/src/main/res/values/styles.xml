@@ -4,5 +4,6 @@
         <item name="colorPrimary">@color/primaryColor</item>
         <item name="colorSecondary">@color/secondaryColor</item>
         <item name="background">@color/white</item>
+        <item name="backgroundColor">@color/darkblue</item>
     </style>
 </resources>
