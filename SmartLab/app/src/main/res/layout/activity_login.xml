@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
+    tools:context=".Activity.LoginActivity"
     android:padding="20dp">
 
     <ImageView
@@ -26,7 +26,7 @@
         android:layout_marginTop="40dp"
         android:textSize="14sp"
         android:fontFamily="@font/poppins_regular"
-        android:text="Silakan login menggunakan NIM dan password yang telah terdaftar." />
+        android:text="Silakan login menggunakan Email dan password yang telah terdaftar." />
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
-        android:text="NIM"
+        android:text="Email"
         android:fontFamily="@font/poppins_bold"
         android:textColor="#25388D"
         android:id="@+id/txt_nim"/>
@@ -46,22 +46,21 @@
         app:layout_constraintTop_toBottomOf="@+id/txt_nim"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:hint="Masukan NIM anda disini"
+        android:hint="Masukan Email anda disini"
         android:textSize="14sp"
         android:fontFamily="@font/poppins_regular"
         android:background="@drawable/edittext_shape"
         android:height="40dp"
         android:paddingLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/edt_nim"/>
+        android:id="@+id/edt_email"/>
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edt_nim"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:text="Password"
         android:fontFamily="@font/poppins_bold"
@@ -69,27 +68,32 @@
         android:id="@+id/txt_password"/>
 
 
-    <EditText
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputlayoutlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/txt_password"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:hint="Masukan Password anda disini"
-        android:drawableRight="@drawable/mata_nutup"
-        android:paddingRight="20dp"
-        android:textSize="14sp"
-        android:fontFamily="@font/poppins_regular"
         android:background="@drawable/edittext_shape"
-        android:height="40dp"
-        android:paddingLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:id="@+id/edt_password"/>
+        android:hint="Masukan Password anda disini"
+        app:passwordToggleEnabled="true"
+        android:paddingHorizontal="15dp"
+        android:paddingBottom="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="14sp"
+            android:inputType="textPassword" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/inputlayoutlogin"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginTop="5dp"
         android:layout_marginStart="15dp"
@@ -98,7 +102,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/inputlayoutlogin"
         app:layout_constraintLeft_toRightOf="@+id/chk"
         android:layout_marginTop="10dp"
         android:text="Ingat saya?"
@@ -109,7 +113,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/inputlayoutlogin"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
@@ -122,7 +126,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/inputlayoutlogin"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
